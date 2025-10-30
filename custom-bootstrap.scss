@@ -1,0 +1,27 @@
+@import "./scss/functions";
+@import "./scss/variables";
+
+$new-font-sizes: (
+  7: 0.8rem,
+  8: 0.6rem,
+  9: 0.5rem,
+  10: 0.4rem,
+);
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+$new-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+);
+
+$border-widths: map-merge($border-widths, $new-border-widths);
+
+$btn-padding-x: 2.5rem;
+$btn-padding-y: 0.75rem;
+$grid-gutter-width: 0.5rem;
+
+$card-bg: $danger;
+@import "./scss/bootstrap.scss";
